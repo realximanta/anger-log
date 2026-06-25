@@ -1,59 +1,46 @@
-😡 Anger Log
+# 😡 Anger Log
 
 A tiny Git-powered anger tracker for Termux.
 
-Every tap on a Termux Shortcut records the current time, commits the change, and pushes it to GitHub automatically.
+Every time I get angry or someone gets angry at me, I tap a single Termux shortcut. The script automatically records the current time, commits the change, and pushes it to this repository.
 
-Features
+## Structure
 
-- 📅 Automatically creates a new log file every day ("dd-mm-yy.md")
-- ⏰ Records the exact time of each anger event
-- 🚀 One-tap logging with Termux:Widget
-- 📦 Automatic Git commit & push
-- 📜 Permanent history through Git commits
-
-Repository Structure
-
- anger-log/
+```
+anger-log/
 ├── README.md
 ├── 25-06-26.md
 ├── 26-06-26.md
 ├── 27-06-26.md
 └── ...
+```
 
-Example
+Each day gets its own Markdown file.
 
-"26-06-26.md"
+Example:
 
-# 08:17
-# 10:42
-# 15:06
+```md
+# 08:14
+# 10:36
+# 16:09
 # 23:24
+```
 
-Each line represents one moment when the shortcut was tapped.
+Each line represents one anger event.
 
-Workflow
+## Features
 
-Tap Shortcut
-      ↓
-Get current date & time
-      ↓
-Create today's file (if needed)
-      ↓
-Append current time
-      ↓
-git add
-      ↓
-git commit
-      ↓
-git push
-      ↓
-Done ✅
+- 📅 Automatic daily log files (`dd-mm-yy.md`)
+- 🕒 Records the exact time of every event
+- ⚡ One-tap execution using Termux:Widget
+- 📂 Git version history
+- ☁️ Automatic GitHub commit & push
+- 📜 Permanent timeline of anger events
 
-Purpose
+## Why?
 
-This repository acts as a simple personal timeline of emotional events. Instead of trying to remember when something happened, every tap leaves a timestamped record backed by Git history.
+Instead of forgetting emotional moments, this repository keeps a simple timeline. Over weeks or months, it becomes easy to identify patterns, frequency, and changes over time.
 
-License
+---
 
-Personal use.
+*"Every tap becomes a timestamp. Every timestamp becomes a story."*
