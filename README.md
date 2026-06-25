@@ -14,7 +14,7 @@ Features
 
 Repository Structure
 
-anger-log/
+ anger-log/
 ├── README.md
 ├── 25-06-26.md
 ├── 26-06-26.md
